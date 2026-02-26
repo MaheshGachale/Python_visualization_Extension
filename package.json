@@ -1,0 +1,93 @@
+{
+  "name": "python-execution-visualizer",
+  "displayName": "Python Execution Visualizer",
+  "description": "Step-by-step Python execution visualizer with heap, stack, and variable inspection — like Python Tutor inside VS Code.",
+  "version": "1.0.0",
+  "publisher": "python-visualizer",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Visualization",
+    "Education"
+  ],
+  "keywords": [
+    "python",
+    "debugger",
+    "visualizer",
+    "tutor",
+    "step"
+  ],
+  "icon": "media/icon.png",
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pythonVisualizer.start",
+        "title": "Python Visualizer: Visualize Execution",
+        "icon": "$(play-circle)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "pythonVisualizer.start",
+          "when": "resourceLangId == python",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "pythonVisualizer.start",
+          "when": "resourceLangId == python",
+          "group": "debug"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "pythonVisualizer.start",
+          "when": "resourceLangId == python",
+          "group": "debug"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Python Execution Visualizer",
+      "properties": {
+        "pythonVisualizer.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Path to the Python interpreter to use for tracing."
+        },
+        "pythonVisualizer.autoPlayInterval": {
+          "type": "number",
+          "default": 500,
+          "description": "Milliseconds between steps during auto-play (Run mode)."
+        },
+        "pythonVisualizer.maxSteps": {
+          "type": "number",
+          "default": 5000,
+          "description": "Maximum number of execution steps to capture."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0"
+  }
+}
