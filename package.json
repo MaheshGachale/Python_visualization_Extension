@@ -3,7 +3,7 @@
   "displayName": "Python Execution Visualizer",
   "description": "Step-by-step Python execution visualizer with heap, stack, and variable inspection — like Python Tutor inside VS Code.",
   "version": "1.0.0",
-  "publisher": "python-visualizer",
+  "publisher": "MaheshG",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -17,7 +17,14 @@
     "debugger",
     "visualizer",
     "tutor",
-    "step"
+    "step",
+    "dsa",
+    "data structures",
+    "algorithms",
+    "visualization",
+    "education",
+    "teaching",
+    "learning"
   ],
   "icon": "media/icon.png",
   "activationEvents": [
