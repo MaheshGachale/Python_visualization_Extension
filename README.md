@@ -1,113 +1,129 @@
 # 🐍 Python Execution Visualizer
 
 <p align="center">
-  <img src="media/icon.png" width="128" height="128" alt="Python Visualizer Logo">
+  <img src="media/icon.png" width="160" height="160" alt="Python Visualizer Logo">
 </p>
 
 <p align="center">
-  <b>A professional-grade VS Code extension to visualize Python execution step-by-step—like Python Tutor, right inside your editor.</b>
+  <h2 align="center">See Your Code. Understand Your Logic.</h2>
+  <p align="center">
+    <b>A high-performance VS Code extension that turns Python execution into an interactive visual experience. Perfect for students, educators, and developers debugging complex algorithms.</b>
+  </p>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/VS%20Code-^1.85.0-blue?style=flat-square&logo=visual-studio-code" alt="VS Code Version">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-green?style=flat-square&logo=python" alt="Python Version">
-  <img src="https://img.shields.io/badge/Category-Education-orange?style=flat-square" alt="Category">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
+  <a href="https://marketplace.visualstudio.com/items?itemName=MaheshG.python-execution-visualizer">
+    <img src="https://img.shields.io/badge/VS%20Code-^1.85.0-blue?style=for-the-badge&logo=visual-studio-code" alt="VS Code Support">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.8%2B-green?style=for-the-badge&logo=python" alt="Python Support">
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
 </p>
 
 ---
 
-## 📺 Project Demo
+## 📺 Experience the Magic
 
-Experience the full power of the visualizer. See how it handles complex data structures, recursion, and real-time state changes.
+Stop guessing what happens in the heap. Watch your code come to life in real-time.
 
-> [!TIP]
-> Click the link below to watch the video demonstration.
-
-[**🎬 Watch the Python Visualizer Demo**](https://drive.google.com/file/d/1OLWkz2cLU3e5YkSTrWGRhuRdQSxGxdKJ/view?usp=drive_link)
+> [!IMPORTANT]
+> **[🎬 Click Here to Watch the Full Video Tutorial/Demo](https://drive.google.com/file/d/1OLWkz2cLU3e5YkSTrWGRhuRdQSxGxdKJ/view?usp=drive_link)**
 
 ---
 
-## ✨ Amazing Features
+## 🎯 Why Python Visualizer?
 
-| Feature | Description |
-| :--- | :--- |
-| **🐍 Live Tracing** | Watch your code execute line-by-line with high precision. |
-| **📦 Heap Visualization** | Interactive SVG graph showcasing objects, types, and references. |
-| **🗂️ Call Stack** | Deep-dive into active frames and local variable snapshots. |
-| **🟢 Mutation Alerts** | Variables that changed since the last step are highlighted for clarity. |
-| **⏱️ Time-Travel** | Scrub through the entire execution timeline seamlessly. |
-| **🎨 Sleek UI** | A premium, theme-aware interface that feels like part of VS Code. |
+Standard debuggers show you values in a tree. **Python Visualizer** shows you the *connections*.
+
+| Feature | 🐍 Python Visualizer | 🪟 Standard Debugger |
+| :--- | :---: | :---: |
+| **Heap Memory Mapping** | ✅ Visual Linkages | ❌ Plain Values |
+| **Object Mutations** | ✅ Auto-Highlighted | ❌ Manual Check |
+| **Time-Travel** | ✅ Instant Scrubbing | ⚠️ Single Step Only |
+| **Nested Structures** | ✅ Interactive Graphs | ⚠️ Click-to-Expand |
+| **Education Focused** | ✅ High | ❌ Low |
 
 ---
 
-## 🚀 Getting Started
+## ✨ Power-User Features
 
-### Prerequisites
+| Feature | Visual Icon | What it does |
+| :--- | :---: | :--- |
+| **Live Tracing** | ⚡ | Captures every frame, local variable, and heap object. |
+| **Interactive Heap** | 🕸️ | Drag, zoom, and pan through a dynamic object graph. |
+| **Smart Diffing** | 🟢 | Automatically highlights variables that modified their state. |
+| **Stack Inspection** | 🗂️ | Visualize recursion with a clear, numbered call stack. |
+| **Theme Sync** | 🌓 | Instantly adapts to your dark or light VS Code theme. |
 
-- **Python 3.8+** must be installed and added to your `PATH`.
-- **VS Code 1.85+** for the best experience.
+---
 
-### How to Use
+## 🛠️ Supported Python Features
 
-1.  **Open** any `.py` file you wish to visualize.
-2.  **Launch** the visualizer using one of these methods:
-    *   Click the **▶ (Visualizer Icon)** in the top-right Editor Title Bar.
-    *   Right-click in the editor and select **Python Visualizer: Visualize Execution**.
-    *   Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) ➜ type **"Python Visualizer"**.
+| Category | Supported? | Details |
+| :--- | :---: | :--- |
+| **Basic Types** | ✅ | Integers, Strings, Booleans, Floats |
+| **Collections** | ✅ | Lists, Dictionaries, Sets, Tuples |
+| **OOP** | ✅ | Classes, Instances, Class Variables |
+| **Functions** | ✅ | Recursion, Closures, Nested Functions |
+| **Logic** | ✅ | Conditionals, Loops (`while`, `for`) |
+| **Complex** | ⚠️ | Deeply nested objects (up to depth 10) |
+
+---
+
+## 🚀 Installation & Usage
+
+### 1. Requirements
+*   **Python 3.8+** must be in your system `PATH`.
+*   **VS Code 1.85+**.
+
+### 2. Quick Start
+1.  **Open** any `.py` script.
+2.  **Run** via the **▶ Visualizer icon** in the top-right corner.
+3.  **Navigate** using the control panel or keyboard.
 
 ---
 
 ## ⌨️ Productivity Shortcuts
 
-Master the visualizer with these intuitive keyboard controls:
-
-| Key | Action |
-| :--- | :--- |
-| `Space` | **Run / Pause** (Auto-advance every 500ms) |
-| `→` | **Next Step** |
-| `←` | **Previous Step** |
-| `Home` | **Restart** (Jump to Step 1) |
-| `End` | **Finish** (Jump to Last Step) |
+| Category | Key | Action |
+| :--- | :---: | :--- |
+| **Playback** | `Space` | **Play / Pause** (Auto-advance 500ms) |
+| **Step** | `→` | Next Execution Step |
+| **Step** | `←` | Previous Execution Step |
+| **Jump** | `Home` | Restart from Step 1 |
+| **Jump** | `End` | Skip to the Last Step |
 
 ---
 
-## ⚙️ Customization
+## 🏗️ Technical Architecture
 
-Tailor the extension to your needs via **VS Code Settings** (`Ctrl+,`):
-
-*   `pythonVisualizer.pythonPath`: Specify a custom path to your Python interpreter.
-*   `pythonVisualizer.autoPlayInterval`: Adjust the speed of the "Run" mode (in ms).
-*   `pythonVisualizer.maxSteps`: Set the maximum number of steps to capture (default: 5000).
-
----
-
-## 🏗️ Architecture Under the Hood
-
-The extension utilizes a robust `sys.settrace` engine to capture the heartbeat of your Python code.
+Built on top of a custom-engineered `sys.settrace` engine for zero-config execution.
 
 ```mermaid
-graph LR
-    User([User Code]) --> Tracer[Python Tracer Engine]
-    Tracer --> Protocol{JSON Protocol}
-    Protocol --> Host[Extension Host]
-    Host --> UI[Webview Frontend]
-    UI --> Graph[Interactive Heap Graph]
-    UI --> Editor[Source Highlighting]
+graph TD
+    A[Python Script] -->|Execution Trace| B(Core Tracer Engine)
+    B -->|Structured JSON| C{Extension Host}
+    C -->|IPC Messaging| D[Modern Webview UI]
+    D -->|SVG/D3.js| E[Interactive Memory Graph]
+    D -->|Prism.js| F[Source Code View]
 ```
 
 ---
 
-## 📜 License
+## 📜 License & Credit
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
+Distributed under the **MIT License**. Created with ❤️ by **MaheshG**.
+
+> [!TIP]
+> Found a bug or have a suggestion? Open an issue on GitHub!
 
 ---
 
 <p align="center">
-  <i>"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."</i> — Brian Kernighan
+  <i>"The best way to debug is to see it happen."</i>
 </p>
 
 <p align="center">
-  <b>Build smarter with Python Visualizer.</b>
+  <b>Elevate your Python journey with Python Visualizer.</b>
 </p>
