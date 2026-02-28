@@ -27,8 +27,10 @@
 
 Stop guessing what happens in the heap. Watch your code come to life in real-time.
 
-> [!IMPORTANT]
-> **[🎬 Click Here to Watch the Full Video Tutorial/Demo](https://drive.google.com/file/d/1OLWkz2cLU3e5YkSTrWGRhuRdQSxGxdKJ/view?usp=drive_link)**
+![Extension Overview 1](media/Overview1.png)
+![Extension Overview 2](media/Overview2.png)
+
+**[🎬 Click Here to Watch the Full Video Tutorial/Demo](https://drive.google.com/file/d/1OLWkz2cLU3e5YkSTrWGRhuRdQSxGxdKJ/view?usp=drive_link)**
 
 ---
 
@@ -96,18 +98,6 @@ Standard debuggers show you values in a tree. **Python Visualizer** shows you th
 
 ---
 
-## 🏗️ Technical Architecture
-
-Built on top of a custom-engineered `sys.settrace` engine for zero-config execution.
-
-```mermaid
-graph TD
-    A[Python Script] -->|Execution Trace| B(Core Tracer Engine)
-    B -->|Structured JSON| C{Extension Host}
-    C -->|IPC Messaging| D[Modern Webview UI]
-    D -->|SVG/D3.js| E[Interactive Memory Graph]
-    D -->|Prism.js| F[Source Code View]
-```
 
 ---
 
@@ -115,8 +105,7 @@ graph TD
 
 Distributed under the **MIT License**. Created with ❤️ by **MaheshG**.
 
-> [!TIP]
-> Found a bug or have a suggestion? Open an issue on GitHub!
+Found a bug or have a suggestion? Open an issue on GitHub!
 
 ---
 

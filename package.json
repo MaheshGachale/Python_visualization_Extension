@@ -2,8 +2,12 @@
   "name": "python-execution-visualizer",
   "displayName": "Python Execution Visualizer",
   "description": "Step-by-step Python execution visualizer with heap, stack, and variable inspection — like Python Tutor inside VS Code.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "MaheshG",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaheshGachale/Python_visualization_Extension"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
